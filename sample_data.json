@@ -1,175 +1,38 @@
 {
   "project_info": {
     "customer_name": "고객사 (자동생성)",
-    "project_name": "Cloud 인프라 환경 구축",
-    "fx_rate": 1430,
+    "project_name": "AWS Cloud 인프라 환경 구축",
+    "fx_rate": 1405.5,
     "vat_included": false
   },
   "inventory_items": [
     {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Virtual Machines",
-      "applied": "Virtual Machines",
-      "spec": "1 D2 v3 (2 vCPUs, 8 GB RAM) x 730 시간 (Pay as you go), Linux,  (Pay as you go); 1 managed disk – E15; Inter Region transfer type, 5 GB outbound data transfer from 미국 동부 to 동아시아",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 89.28,
-      "billing_option": "Pay-as-you-go"
+      "category": "운영계",
+      "description": "",
+      "service": "Amazon EC2",
+      "config_summary": "테넌시 (공유 인스턴스), 운영 체제 (Linux), 워크로드 (Consistent, 인스턴스 수: 1), 고급 EC2 인스턴스 (t4g.nano), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), 모니터링 활성화 (비활성화됨), DT 인바운드: Not selected (0 월별 TB), DT 아웃바운드: Not selected (0 월별 TB), DT 리전 내: (0 월별 TB)",
+      "mrr_usd": 3.796
     },
     {
-      "group_path": "Storage > Storage",
-      "service_name": "Storage Accounts",
-      "applied": "Storage Accounts",
-      "spec": "블록 Blob Storage, 범용 V2, 단일 구조 네임스페이스, LRS 중복도, 핫 액세스 계층, 1,000 GB 용량 - 용량제, 10 x 10,000개 쓰기 작업, 10 x 10,000개 컨테이너 나열 및 생성 작업, 10 x 10,000개 읽기 작업, 1 x 10,000개 기타 작업입니다. 1,000 GB 데이터 검색, 1,000 GB 데이터 쓰기, SFTP 사용 안 함, Object Replication disabled",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 21.844,
-      "billing_option": "Pay-as-you-go"
+      "category": "운영계",
+      "description": "",
+      "service": "Amazon API Gateway",
+      "config_summary": "HTTP API 요청 단위 (백만 개), 각 요청의 평균 크기 (34 KB), REST API 요청 단위 (백만 개), 캐시 메모리 크기(GB) (없음), WebSocket 메시지 단위 (1,000개), 평균 메시지 크기 (32 KB)",
+      "mrr_usd": 0.0
     },
     {
-      "group_path": "Server 및 DBMS > 데이터베이스",
-      "service_name": "Azure SQL Database",
-      "applied": "Azure SQL Database",
-      "spec": "단일 데이터베이스, vCore, 일반적인 용도, 프로비저닝됨, 표준 시리즈(Gen 5), 기본 또는 지역 복제본 재해 복구, 로컬 중복, 1 - 2 vCore 데이터베이스 x 730 시간, 32GB 스토리지, SQL 라이선스(종량제), RA-GRS 백업 스토리지 중복, 0 GB 특정 시점 복원,  0 x 5 GB 장기 보존",
-      "qty": 1,
-      "unit": "ea",
-      "region": "Korea Central",
-      "retailPrice": 402.72278,
-      "billing_option": "Pay-as-you-go"
+      "category": "운영계",
+      "description": "",
+      "service": "Amazon EKS",
+      "config_summary": "EKS 클러스터 수 (1), 하이브리드 노드 수 (1 월간)",
+      "mrr_usd": 73.0
     },
     {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Azure Kubernetes Service (AKS)",
-      "applied": "Azure Kubernetes Service (AKS)",
-      "spec": "표준; 1 클러스터에 대한 클러스터 관리; 1 D2 v3(2 vCPU, 8GB RAM) x 730 시간 (용량제), Linux; 관리형 OS 디스크 1개 – E10",
-      "qty": 1,
-      "unit": "ea",
-      "region": "Korea Central",
-      "retailPrice": 99.39,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "기타자원 > 관리 및 거버넌스",
-      "service_name": "Azure Backup",
-      "applied": "Azure Backup",
-      "spec": "Azure VM, 표준 Backup 정책, 1 인스턴스 x 0 GB, LRS 중복, 낮음 일 평균 변동, 0 GB 표준 계층의 평균 월간 백업 데이터, 0 GB 보관 계층의 평균 월간 백업 데이터",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 0.0,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Virtual Machines",
-      "applied": "Virtual Machines",
-      "spec": "1 D2 v3 (2 vCPUs, 8 GB RAM) x 730 시간 (Pay as you go), Windows (라이선스 포함), OS Only; 0 managed disks – S4; Inter Region transfer type, 5 GB outbound data transfer from 미국 동부 to 동아시아",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 137.24,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Storage > Storage",
-      "service_name": "Storage Accounts",
-      "applied": "Storage Accounts",
-      "spec": "블록 Blob Storage, 범용 V2, 단일 구조 네임스페이스, LRS 중복도, 핫 액세스 계층, 1,000 GB 용량 - 용량제, 10 x 10,000개 쓰기 작업, 10 x 10,000개 컨테이너 나열 및 생성 작업, 10 x 10,000개 읽기 작업, 1 x 10,000개 기타 작업입니다. 1,000 GB 데이터 검색, 1,000 GB 데이터 쓰기, SFTP 사용 안 함, Object Replication disabled",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 21.844,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "App Service",
-      "applied": "App Service",
-      "spec": "기본 계층; 1 B1(코어 1개, 1.75GB RAM, 10GB 스토리지) x 730시간; Windows OS; 0 SNI SSL 연결; 0 IP SSL 연결; 0 사용자 지정 도메인; 0 표준 SLL 인증서; 0 와일드카드 SSL 인증서",
-      "qty": 1,
-      "unit": "ea",
-      "region": "West US",
-      "retailPrice": 54.75,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Virtual Machines",
-      "applied": "Virtual Machines",
-      "spec": "1 D2 v3 (2 vCPUs, 8 GB RAM) x 730 시간 (Pay as you go), Windows (라이선스 포함), OS Only; 0 managed disks – S4; Inter Region transfer type, 5 GB outbound data transfer from 미국 동부 to 동아시아",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 137.24,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 데이터베이스",
-      "service_name": "Azure Cosmos DB",
-      "applied": "Azure Cosmos DB",
-      "spec": "NoSQL에 대한 Azure Cosmos DB(이전의 Core), 표준 프로비저닝된 처리량(수동), 상시 무료 수량 사용 안 함, 용량제, Business Critical, Per Partition Automatic Failover- 미국 동부(쓰기 지역), 0 RUs x 730 시간, 트랜잭션 스토리지 0GB, 분석 스토리지 사용 안 함, 주기적 백업 스토리지 복사본 2개, 전용 게이트웨이 사용 안 함",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 0.0,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Azure Kubernetes Service (AKS)",
-      "applied": "Azure Kubernetes Service (AKS)",
-      "spec": "표준; 1 클러스터에 대한 클러스터 관리; 1 D2 v3(2 vCPU, 8GB RAM) x 730 시간 (용량제), Linux; 관리형 OS 디스크 0개 – S4",
-      "qty": 1,
-      "unit": "ea",
-      "region": "West US",
-      "retailPrice": 85.41,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 데이터베이스",
-      "service_name": "Azure SQL Database",
-      "applied": "Azure SQL Database",
-      "spec": "단일 데이터베이스, vCore, 일반적인 용도, 프로비저닝됨, 표준 시리즈(Gen 5), 기본 또는 지역 복제본 재해 복구, 로컬 중복, 1 - 2 vCore 데이터베이스 x 730 시간, 32GB 스토리지, SQL 라이선스(종량제), RA-GRS 백업 스토리지 중복, 0 GB 특정 시점 복원,  0 x 5 GB 장기 보존",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 372.97118,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Virtual Machines",
-      "applied": "Virtual Machines",
-      "spec": "1 D2 v3 (2 vCPUs, 8 GB RAM) x 730 시간 (Pay as you go), Windows (라이선스 포함), OS Only; 0 managed disks – S4; Inter Region transfer type, 5 GB outbound data transfer from 미국 동부 to 동아시아",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 137.24,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "Server 및 DBMS > 컴퓨팅",
-      "service_name": "Virtual Machines",
-      "applied": "Virtual Machines",
-      "spec": "1 D2 v3 (2 vCPUs, 8 GB RAM) x 730 시간 (Pay as you go), Windows (라이선스 포함), OS Only; 0 managed disks – S4; Inter Region transfer type, 5 GB outbound data transfer from 미국 동부 to 동아시아",
-      "qty": 1,
-      "unit": "ea",
-      "region": "East US",
-      "retailPrice": 137.24,
-      "billing_option": "Pay-as-you-go"
-    },
-    {
-      "group_path": "기타자원 > Support",
-      "service_name": "Support",
-      "applied": "Support",
-      "spec": "",
-      "qty": 1,
-      "unit": "ea",
-      "region": "Support",
-      "retailPrice": 0.0,
-      "billing_option": "Pay-as-you-go"
+      "category": "운영계",
+      "description": "",
+      "service": "Amazon RDS for SQL server",
+      "config_summary": "스토리지 크기 (100 GB), 각 RDS 인스턴스의 스토리지 (범용 SSD(gp2)), 노드 (1), 인스턴스 유형 (db.m6i.12xlarge), 사용률(온디맨드 전용) (100 %Utilized/Month), 요금 모델 (OnDemand), 배포 옵션 (Single-AZ), 라이선스 (Bring your own license), 데이터베이스 에디션 (Enterprise Developer), 분리형 라이선스 (FALSE)",
+      "mrr_usd": 7546.700000000001
     }
   ]
 }
